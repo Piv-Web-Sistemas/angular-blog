@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,19 @@ import { CommonModule } from '@angular/common';
   styleUrl: './big-card.component.css'
 })
 export class BigCardComponent {
+
+@Input()
+photoCover:string=""
+@Input()
+cardTitle: string=""
+@Input()
+cardDescriptions: string=""
+
+construtor(){
+
+}
+ngOnInit(): void{
+
+}
 
 }

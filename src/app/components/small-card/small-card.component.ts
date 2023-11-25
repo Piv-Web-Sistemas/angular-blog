@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,16 @@ import { CommonModule } from '@angular/common';
   styleUrl: './small-card.component.css'
 })
 export class SmallCardComponent {
+@Input()
+  photoCover:string =""
+@Input()
+cardTitle: string=""
+
+construtor(){
+
+}
+ngOnInit(): void{
+
+}
 
 }
